@@ -65,12 +65,10 @@ let menuadm = document.getElementById('adm');
 
 
 
-        let alteracoes = false;
         let confirmarAlt = document.getElementById('confirmaralteracoes');
         let msgconfirmar = document.getElementById('msgconfirmar');
         confirmarAlt.addEventListener('click', () => {
 
-            alteracoes = true;
             msgconfirmar.textContent = 'Alterações salvas com sucesso.';
             msgconfirmar.style.color = 'red'
             msgconfirmar.style.textAlign = 'left';
@@ -90,12 +88,14 @@ let menuadm = document.getElementById('adm');
         let confirmacao = false;
 
         excluirCat.forEach((element) => {
-            element.addEventListener('click', (event) => {
+                element.addEventListener('click', (event) => {
                 event.preventDefault(); // Evita o comportamento padrão do link
                 element.closest('.catalogo').querySelector('.click').getAttribute('data-servico');
 
-                // Remover o elemento do DOM
+                
+                      // Remover o elemento do DOM
                 element.closest('.catalogo').remove();
+                
                 
             });
         });

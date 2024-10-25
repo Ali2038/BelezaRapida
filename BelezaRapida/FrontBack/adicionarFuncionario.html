@@ -39,22 +39,26 @@
         <div class="titulocampo">
             <p>E-mail</p>
         </div>
-        <input type="text" required class="campo">
+        <input type="text" required class="campo" minlength="5" maxlength="65">
 
         <div class="titulocampo">
             <p>Data nascimento</p>
         </div>
+
         <input type="date" required class="campo">
 
         <div class="titulocampo" id="telefone">
             <p>Telefone</p>
         </div>
-        <input type="text" required class="campo" placeholder="(00) 00000-0000" maxlength="11" required>
+
+
+        <input type="text" id="telefone" class="campo" placeholder="(00) 00000-0000" minlength="11" maxlength="11" required>
 
         <div class="titulocampo">
             <p>CPF</p>
         </div>
-        <input type="text" required class="campo" maxlength="11">
+
+        <input type="text" required class="campo" placeholder=" XXX.XXX.XXX-XX." minlength="11" maxlength="11">
 
         <div class="titulocampo">
             <p>Senha</p>

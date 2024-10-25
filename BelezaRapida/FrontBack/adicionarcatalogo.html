@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+
+<body>
+    <h1>
+        <h1>Adicionar catálogo</h1>
+        <br>
+    </h1>
+
+    <form class="adicionarcatalogo">
+
+        <div class="titulocampo">
+            <p>Foto do catálogo</p>
+        </div>
+
+        <input type="file" required class="campo">
+
+        <div class="titulocampo">
+            <p>Descrição</p>
+        </div>
+
+        <input type="text" required class="campo" placeholder="Simples e objetiva" minlength="20" maxlength="60">
+
+        <div class="titulocampo">
+            <p>Duração</p>
+
+    <select id="minutos" class="campo" required>
+        <option value="10">10min.</option>
+        <option value="20">20min.</option>
+        <option value="30">30min.</option>
+        <option value="40">40min.</option>
+        <option value="50">50min.</option>
+        <option value="60">60min.</option>
+        <option value="2">2hrs.</option>
+    </select>
+
+        </div>
+
+
+        <div class="titulocampo" id="telefone">
+            <p>Preço</p>
+
+
+            <select id="precos" class="campo" required>
+                <option value="20">$20</option>
+                <option value="30">$30</option>
+                <option value="40">$40</option>
+                <option value="50">$50</option>
+                <option value="60">$60</option>
+                <option value="70">$70</option>
+                <option value="80">$80</option>
+                <option value="90">$90</option>
+                <option value="100">$100</option>
+                <option value="200">$200</option>
+                <option value="300">$300</option>
+                <option value="400">$400</option>
+                <option value="500">$500</option>
+                <option value="1000">$1000</option>
+                <option value="1500">$1500</option>
+                <option value="2000">$2000</option>
+                <option value="2500">$2500</option>
+                <option value="3000">$3000</option>
+            </select>
+
+
+        </div>
+
+        <div class="titulocampo">
+            <p>Categoria</p>
+
+            <select name="" id="" class="campo" required>
+                <option value="cabelo">Cabelo</option>
+                <option value="pele">Pele</option>
+                <option value="pesmaos">Pés/mãos</option>
+                <option value="outros">Outros</option>
+            </select>
+        </div>
+
+
+
+        <div class="titulocampo">
+            <p>Horários</p>
+
+            <select id="horarios" class="campo" required>
+                <option value="08:00">08:00</option>
+                <option value="08:30">08:30</option>
+                <option value="09:00">09:00</option>
+                <option value="09:30">09:30</option>
+                <option value="10:00">10:00</option>
+                <option value="10:30">10:30</option>
+                <option value="11:00">11:00</option>
+                <option value="11:30">11:30</option>
+                <option value="12:00">12:00</option>
+                <option value="12:30">12:30</option>
+                <option value="13:00">13:00</option>
+                <option value="13:30">13:30</option>
+                <option value="14:00">14:00</option>
+                <option value="14:30">14:30</option>
+                <option value="15:00">15:00</option>
+                <option value="15:30">15:30</option>
+                <option value="16:00">16:00</option>
+                <option value="16:30">16:30</option>
+                <option value="17:00">17:00</option>
+                <option value="17:30">17:30</option>
+                <option value="18:00">18:00</option>
+                <option value="18:30">18:30</option>
+                <option value="19:00">19:00</option>
+                <option value="19:30">19:30</option>
+                <option value="20:00">20:00</option>
+            </select>
+
+        </div>
+
+        <div class="botaoenviar">
+            <button type="submit">Finalizar</button>
+        </div>
+
+    </form>
+
+    <div class="voltar">
+        <a href="catalogo.html"><img src="img/voltar.png" alt="https://www.flaticon.com/free-icons/back-arrow" class="botaovoltar"></a>
+    </div>
+
+</body>
+
+</html>

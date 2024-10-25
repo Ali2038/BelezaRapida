@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Cadastro</h1>
+        <br>
+    </header>
+
+    <form class="cadastro" id="cadastro">
+
+        <div class="titulocampo">
+            <p>Nome completo</p>
+        </div>
+
+        <input type="text" required class="campo" maxlength="60">
+
+        <div class="titulocampo">
+            <p>E-mail</p>
+        </div>
+
+        <input type="text" required class="campo" maxlength="80">
+
+        <div class="titulocampo">
+            <p>Data nascimento</p>
+        </div>
+
+        <input type="date" required class="campo">
+
+        <div class="titulocampo" id="telefone">
+            <p>Telefone</p>
+        </div>
+
+
+        <input type="text" id="telefone" class="campo" placeholder="(00) 00000-0000" maxlength="11" required>
+
+        <div class="titulocampo">
+            <p>CPF</p>
+        </div>
+
+        <input type="text" required class="campo" placeholder=" XXX.XXX.XXX-XX." maxlength="11">
+
+        <div class="titulocampo">
+            <p>Senha</p>
+        </div>
+
+        <input type="text" required class="campo" id="senha" minlength="6" maxlength="12">
+
+        <div class="titulocampo">
+            <p>Confirmar senha</p>
+        </div>
+
+        <input type="text" required class="campo" id="confirmarsenha" maxlength="12">
+        <span id="mensagemErro"></span>
+
+
+        <div class="lgpd">
+            <p>Aceito o tratamento dos meus dados</p>
+            <p>de acordo com a LGDP/ <a href="termos.html" class="termos"><u>Termos de uso</u></a>.</p>
+
+            <div class="aceitarlgpd">
+                <input type="checkbox">
+            </div>
+
+
+        </div>
+
+        <div class="botaoenviar">
+            <button type="submit">Finalizar</button>
+        </div>
+
+    </form>
+
+    <div class="voltar">
+        <button class="voltarbotao" onclick="window.location.href = 'index.html'"><img src="img/voltar.png" alt="https://www.flaticon.com/free-icons/back-arrow" class="botaovoltar"></button>
+    </div>
+
+    <script src="js/verificarForms.js"></script>
+
+</body>
+
+</html>

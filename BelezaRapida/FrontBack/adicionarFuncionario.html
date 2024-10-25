@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Cadastro funcionário</h1>
+        <br>
+    </header>
+
+    <form id="cadfuncionario">
+        <div class="titulocampo">
+            <p>Nome completo</p>
+        </div>
+        <input type="text" required class="campo">
+
+        <div class="titulocampo">
+            <p>Cargo</p>
+        </div>
+        <select id="profissoes" name="profissoes" class="campo">
+            <option value="#">Selecione</option>
+            <option value="cabeleireiro">Cabeleireiro</option>
+            <option value="manicure">Manicure</option>
+            <option value="pedicure">Pedicure</option>
+            <option value="esteticista">Esteticista</option>
+            <option value="maquiador">Maquiador</option>
+            <option value="barbeiro">Barbeiro</option>
+            <option value="depilador">Depilador</option>
+            <option value="designer de sobrancelhas">Designer de Sobrancelhas</option>
+            <option value="outrocargo">Outro cargo</option>
+        </select>
+
+        <div class="titulocampo">
+            <p>E-mail</p>
+        </div>
+        <input type="text" required class="campo">
+
+        <div class="titulocampo">
+            <p>Data nascimento</p>
+        </div>
+        <input type="date" required class="campo">
+
+        <div class="titulocampo" id="telefone">
+            <p>Telefone</p>
+        </div>
+        <input type="text" required class="campo" placeholder="(00) 00000-0000" maxlength="11" required>
+
+        <div class="titulocampo">
+            <p>CPF</p>
+        </div>
+        <input type="text" required class="campo" maxlength="11">
+
+        <div class="titulocampo">
+            <p>Senha</p>
+        </div>
+        <input type="password" id="senha" required class="campo" minlength="6" maxlength="12">
+
+        <div class="titulocampo">
+            <p>Confirmar senha</p>
+        </div>
+        
+        <input type="password" id="confirmarsenha" required class="campo" minlength="6" maxlength="12">
+        <span id="mensagemErro"></span>
+
+        <div class="botaoenviar">
+            <button type="submit">Finalizar</button>
+        </div>
+    </form>
+
+    <div class="voltar">
+        <a href="catalogo.html"><img src="img/voltar.png" alt="Voltar" class="botaovoltar"></a>
+    </div>
+
+    <script src="js/verificarForms.js"></script>
+    <script>
+        validarSenhas('cadfuncionario', 'senha', 'confirmarsenha', 'mensagemErro');
+    </script>
+
+</body>
+
+</html>

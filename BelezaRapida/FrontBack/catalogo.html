@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+
+<body>
+    <header id="subir">
+        <h1>Catálogo de serviços</h1>
+        <br>
+    </header>
+
+    <div class="menu" id="menu">
+
+        <img src="img/menu.png" alt="menu" id="imgmenu">
+
+        <div class="itens" id="itens">
+            <ul>
+                <div class="cliente" id="cliente">
+                    <a href="historico.html">
+                        <li>Histórico</li>
+                    </a>
+                    <a href="confirmacoes.html">
+                        <li>Confirmações</li>
+                    </a>
+                </div>
+
+                <div class="administrador" id="adm">
+                    <a href="adicionarFuncionario.html">
+                        <li>Cadastrar funcionários</li>
+                    </a>
+                    <a href="funcionarios.html">
+                        <li>Funcionários</li>
+                    </a>
+                    <a href="feedbackDosClientes.html">
+                        <li>Avaliações</li>
+                    </a>
+                </div>
+
+                <div class="funcionarios" id="funcionarios">
+                    <a href="confirmaragendamento.html">
+                        <li>Confirmar agendamentos</li>
+                    </a>
+                </div>
+
+                <div class="comumTodos">
+                    <a href="atualizardados.html">
+                        <li>Atualizar dados</li>
+                    </a>
+                    <a href="index.html">
+                        <li>Log out</li>
+                    </a>
+                    <a href="excluirconta.html">
+                        <li>Excluir conta</li>
+                    </a>
+                </div>
+
+            </ul>
+        </div>
+    </div>
+
+
+
+
+    <div class="acoes">
+        <div class="botaoadicionar" id="adm">
+            <button type="button" id="adicionarcat"><img src="img/adicionar.png" alt="Adicionar catálogo"></button>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="acoes">
+        <div class="botaoconfirmaralteracoes" id="adm">
+            <button type="button" id="confirmaralteracoes">Confirmar alterações</button>
+        </div>
+        <span id="msgconfirmar"></span>
+    </div>
+
+    <br>
+
+    <div class="catalogos">
+        <h2 class="titulocatalogo">Cabelo</h2>
+
+        <div class="cabelo">
+
+            <div class="catalogo">
+                <div class="click" data-servico="Corte de cabelo">
+                    <img src="img/corteCabelo.jpg" alt="Corte de cabelo imagem">
+                    <p><b>Corte de cabelo:</b> <span class="descrição">Faça um corte de cabelo elegante. </span></p>
+                    <p><b id="valor">valor: </b> <span>60,00$</span></p>
+                    <p><b>Duração:</b> <span>30min.</span></p>
+                </div>
+
+                <div class="acoes" id="adm">
+                    <a href="#"><img src="img/delete.png" alt="deletar" class="delete" id="delete"></a>
+                    <a href="#"><img src="img/editar.png" alt="editar" class="editar" id="edit"></a>
+                </div>
+
+            </div>
+
+
+            <div class="catalogo">
+                <div class="click" data-servico="Penteado de Cabelo">
+                    <img src="img/penteadoCabelo.jpg" alt="Penteado de cabelo imagem">
+                    <p><b>Penteado de Cabelo:</b> <span class="descrição">Deixe seu cabelo mais belo. </span></p>
+                    <p><b id="valor">valor: </b> <span>50,00$</span></p>
+                    <p><b>Duração:</b> <span>20min.</span></p>
+                    
+                </div>
+                
+                <div class="acoes" id="adm">
+                    <a href="#"><img src="img/delete.png" alt="deletar" class="delete" id="delete"></a>
+                    <a href="#"><img src="img/editar.png" alt="editar" class="editar" id="edit"></a>
+                </div>
+
+            </div>
+
+
+            <div class="catalogo">
+                <div class="click" data-servico="Coloração">
+                    <img src="img/coloracao.jpg" alt="Coloração de cabelo">
+                    <p><b>Coloração:</b> <span class="descrição">Uma nova identidade para você! </span></p>
+                    <p><b id="valor">valor: </b> <span>70,00$</span></p>
+                    <p><b>Duração:</b> <span>50min.</span></p>
+                </div>
+
+                <div class="acoes" id="adm">
+                    <a href="#"><img src="img/delete.png" alt="deletar" class="delete"></a>
+                    <a href="#"><img src="img/editar.png" alt="editar" class="editar"></a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Parte da pele -->
+        <h2 class="titulocatalogo">Pele</h2>
+        <div class="pele">
+            <div class="servicopele">
+                <div class="catalogo">
+                    <div class="click" data-servico="Limpeza Profunda">
+                        <img src="img/limpezapele.jpg" alt="Limpeza de pele imagem">
+                        <p><b>Limpeza Profunda: </b><span class="descrição">Renove a sua pele. </span></p>
+                        <p><b id="valor">valor: </b> <span>150,00$</span></p>
+                        <p><b>Duração: </b><span>50min.</span></p>
+                       
+                    </div>
+                    <div class="acoes" id="adm">
+                        <a href="#"><img src="img/delete.png" alt="deletar" class="delete"></a>
+                        <a href="#"><img src="img/editar.png" alt="editar" class="editar"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="catalogo">
+                <div class="click" data-servico="Hidratação">
+                    <img src="img/hidratacaoepele.jpg" alt="Hidratação de pele imagem">
+                    <p><b>Hidratação:</b> <span class="descrição">Sua pele ficará como nova!</span></p>
+                    <p><b id="valor">valor: </b> <span>100,00$</span></p>
+                    <p><b>Duração:</b> <span>40min.</span></p>
+                    
+                </div>
+                <div class="acoes" id="adm">
+                    <a href="#"><img src="img/delete.png" alt="deletar" class="delete"></a>
+                    <a href="#"><img src="img/editar.png" alt="editar" class="editar"></a>
+                </div>
+
+            </div>
+
+
+            <div class="catalogo">
+                <div class="click" data-servico="Maquiagem">
+                    <img src="img/maquiagempele.jpg" alt="Maquiagem de pele imagem">
+                    <p><b>Maquiagem:</b> <span class="descrição">Maquiamos também noivas!</span></p>
+                    <p><b id="valor">valor: </b> <span>200,00$</span></p>
+                    <p><b>Duração:</b> <span>40min.</span></p>
+                </div>
+                
+                    <div class="acoes" id="adm">
+                        <a href="#"><img src="img/delete.png" alt="deletar" class="delete"></a>
+                        <a href="#"><img src="img/editar.png" alt="editar" class="editar"></a>
+                    </div>
+                
+            </div>
+        </div>
+
+        <!-- Parte dos pés e mãos -->
+        <h2 class="titulocatalogo">Pés/Mãos</h2>
+        <div class="pesmaos">
+            <div class="click" data-servico="Pedicure">
+                <div class="catalogo">
+                    <div class="pedicure">
+                        <img src="img/pedicure.jpg" alt="Pedicure imagem">
+                        <p><b>Pedicure: </b><span class="descrição">Pedicure com o melhor esmalte. </span></p>
+                        <p><b id="valor">valor: </b> <span>50,00$</span></p>
+                        <p><b>Duração: </b><span>25min.</span></p>
+                        <div class="acoes" id="adm">
+                            <a href="#"><img src="img/delete.png" alt="deletar" class="delete"></a>
+                            <a href="#"><img src="img/editar.png" alt="editar" class="editar"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="catalogo">
+                <div class="click" data-servico="Manicure">
+                    <img src="img/manicure.jpg" alt="Manicure imagem">
+                    <p><b>Manicure:</b> <span class="descrição">Sua pele ficará como nova!</span></p>
+                    <p><b id="valor">valor: </b><span>50,00$</span></p>
+                    <p><b>Duração:</b> <span>25min.</span></p>
+                    <div class="acoes" id="adm">
+                        <a href="#"><img src="img/delete.png" alt="deletar" class="delete"></a>
+                        <a href="#"><img src="img/editar.png" alt="editar" class="editar"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Outros -->
+        <h2 class="titulocatalogo">Outros</h2>
+        <div class="outros">
+            <div class="outrosservicos">
+                <div class="catalogo">
+                    <div class="click" data-servico="Depilação com cera">
+                        <img src="img/depilacao.webp" alt="depilação cera imagem">
+                        <p><b>Depilação com cera:</b> <span class="descrição">Retira dos pelos de forma eficiente.
+                            </span></p>
+                        <p><b id="valor">valor: </b><span>150,00$</span></p>
+                        <p><b>Duração:</b> <span>50min.</span></p>
+                        <div class="acoes" id="adm">
+                            <a href="#"><img src="img/delete.png" alt="deletar" class="delete"></a>
+                            <a href="#"><img src="img/editar.png" alt="editar" class="editar"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="catalogo">
+                <div class="click" data-servico="Depilação a laser">
+                    <img src="img/depilacaolaser.webp" alt="depilação laser imagem">
+                    <p><b>Depilação a laser:</b> <span class="descrição">Retirada dos pelos de forma permanente.</span>
+                    </p>
+                    <p><b id="valor">valor: </b> <span>1,000,00$</span></p>
+                    <p><b>Duração:</b> <span>2horas.</span></p>
+                    <div class="acoes" id="adm">
+                        <a href="#"><img src="img/delete.png" alt="deletar" class="delete"></a>
+                        <a href="#"><img src="img/editar.png" alt="editar" class="editar"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="subir">
+        <a href="#" id="subir"><img src="img/subir.png" alt="subir"></a>
+    </div>
+
+    <script>
+        let catalogos = document.querySelectorAll('.click');
+        catalogos.forEach(catalogo => {
+            catalogo.addEventListener('click', () => {
+                const servico = catalogo.getAttribute('data-servico');
+                window.location.href = `agendamento.html?servico=${encodeURIComponent(servico)}`;
+            });
+        });
+    </script>
+
+
+    <script src="js/catalogo.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+:root
+{
+    --fonteTitulo : "Dancing Script", Arial, sans-serif;
+    --textosCampo : 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+/* estilização para mobile */
+h1,h2
+{
+    text-align: center;
+    margin-top: 30px;
+    font-family: var(--fonteTitulo);
+    font-size: 40px;
+    text-shadow: 1px 1px indianred;
+}
+
+ img,textarea
+{
+    display: flex;
+    margin: 0 auto;
+    width: 6em;
+}
+
+/* posição dos botões */
+.botoesindex,.botoesadicionais
+{
+    display: grid;
+    height: 6em;
+    font-size: 20px;
+    gap: 50px;
+    max-width: 15em;
+    margin: 0 auto;
+}
+
+/* decoração dos botões */
+.botoesindex button,.botoesadicionais button
+{
+    font-size: 26px;
+    color: white;
+    background-color: #804c7c;
+    border: none;
+    box-shadow: 0.3px 0.3px 3px red;
+    cursor: pointer;
+}
+
+.botoesindex button:active
+{
+    background-color: #8a6286;
+    box-shadow: 0.3px 0.3px 3px black;
+}
+
+/* versão que ta no final */
+.versao 
+{
+    text-align: center;
+    margin-top: 10em;
+    font-size: 16px;
+}
+
+/* div usada para linhar botoesindex mais pra baixo*/
+.alinharbotoes
+{
+    margin-top: 100px;
+}
+
+/* estilo pra pagina de cadastro */
+
+/* cadastro */
+/* campo que digita */
+.cadastro 
+{
+    box-sizing: border-box;
+}
+.campo,.campoexcluir
+{
+    display: grid;
+    height: 2em;
+    min-width: 22em;
+    max-width: 24em;
+    margin: 0 auto;
+    border: none;
+    background-color: #f0e4e4;
+    box-shadow: black 0px 1px 5px 0px ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* quando o usuario clicar no campo de digitar */
+.campo:focus
+{
+    border: 1px solid #dc9c1c;
+}
+
+/* titulo que ta em cima do campo */
+.titulocampo p
+{
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: var(--textosCampo);
+    margin-top: 20px;
+}
+
+.lgpd 
+{
+    text-align: center;
+    margin-right: 50px;
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', sans-serif;
+}
+
+.aceitarlgpd
+{
+  text-align: center;
+  margin-top: -43px;
+  margin-left: 280px;
+}
+
+.termos,.desejacancelar
+{
+    text-decoration: none;
+    color: #d42c24;
+}
+
+.botaoenviar,.botaoentrar,.botaoconfirmar,.botaocancelar,.botoesadicionais
+{
+    display: grid;
+    place-items: center;
+    margin-top: 50px;
+}
+
+/* aqui o padrao dos botoes */
+.botaoenviar button ,.botaoentrar button,.botaoconfirmar button,.botaoaguardando button,.botaocancelar button,.botaoreagendar button,.botaoconfirmaralteracoes button
+{
+    width: 14vh;
+    font-size: 20px;
+    height: 4vh;
+    font-family: 'Trebuchet MS';
+    background-color: rgb(152, 207, 68);
+    color: white;
+    border: solid 1px green;
+    border-radius: 3px;
+    box-shadow: 2px 0px 2px 0px green;
+}
+
+
+/* botaovoltar */
+.botaovoltar,.botaovoltarLogin
+{
+    width: 5vh;
+    margin-bottom: 20px;
+    margin-left: 1px;
+}
+.voltarbotao 
+{
+    height: 6vh;
+    border-radius: 40em;
+    background: none;
+    border: none;
+}
+
+/* termos de uso página*/
+.termosescritos,.exclusaotexto,.cancelaragendamento
+{
+    color: black;
+    display: grid;
+    gap: 30px;
+    font-size: 20px;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* página de login */
+
+.esqueci
+{
+    text-align: center;
+}
+
+.esqueciasenha 
+{
+    margin-right: 170px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #dc9c1c;
+}
+
+
+.botaovoltarLogin
+{
+    margin-top: 200px;
+}
+
+
+/* catalogo de serviços página */
+
+
+/* aqui é o tamanho do icone do menu do catálogo */
+.menu img
+{
+    margin: 0;
+    width: 40px;
+}
+
+#funcionarios,.administrador 
+{
+    display: none;
+}
+
+#itens
+{
+    position: relative;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 10em;
+    background-color: #f8e4f4;
+    display: none;
+}
+
+#itens li
+{
+    list-style: none;
+    margin: 10px -20px 50px;
+}
+#itens ul a
+{
+    text-decoration: none;
+    text-shadow: 1px 1px 10px;
+    color: indianred;
+    font-family: var(--textosCampo);
+}
+
+/* aqui será as configurações do catálogo */
+
+.catalogos img 
+{
+    width: 10em;
+    height: 10em;
+    border-radius: 4px;
+    border: 1px solid black;
+}
+
+.cabelo,.pele,.pesmaos,.outros
+{
+    display: grid;
+    grid-template-columns: 180px 180px;
+    place-content: center;
+    margin: 0 auto;
+}
+
+
+/* aqui está a caixa embaixo da imagem no catálogo */
+.catalogos p
+{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: #f0e4e4;
+    text-align: center;
+    box-shadow: 0px 0px 25px blanchedalmond;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.subir img
+{
+    width: 2em;
+    padding: 3em;
+}
+
+.catalogos 
+{
+    border: 1px solid goldenrod;
+    border-radius: 20px;
+    background-color: rgb(202, 189, 157);
+    font-family:'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+.catalogo 
+{
+    border: 1px solid black;
+    margin: 5px;
+    padding: 3px;
+    border-radius: 5px;
+    margin-top: 5px;
+    background-color: aliceblue;
+    box-sizing: border-box;
+    box-shadow: 1px 0px 3px black;
+}
+
+/* botoes do adm */
+.botaoadicionar button img
+{
+    width: 5vh;
+    height: 5vh;
+    margin: 30px -2px 20px;
+}
+.botaoadicionar button
+{
+   background-color: white;
+   /* margin-top: 30px; */
+   border-radius: 10em;
+   border: none;
+}
+
+
+
+.acoes img
+{
+    width: 2em;
+    height: 2em;
+    display: inline-block;
+    margin: 20px 20px 0;
+}
+
+.acoes 
+{
+    display: none;
+}
+
+/* responsividade pras tela pequena do catálogo em geral*/
+
+@media screen and (max-width: 375px) and (min-width:200px)
+{
+   
+    .cabelo,.pele,.pesmaos,.outros
+    {
+        grid-template-columns: 150px 150px;
+    }
+
+    .catalogos img 
+    {
+        width: 8em;
+        height: 8em;
+    }
+    .catalogo 
+    {
+        width: 9em;
+    }
+
+    .botaoreagendar button 
+    {
+        width: 6em;
+        height: 2em;
+    }
+   .acoes img 
+   {
+    width: 1.5em;
+    height: 1.5em;
+    display: inline-block;
+    margin: 20px 20px 0;
+   }
+}
+
+/* página de agendamento */
+.agendamento 
+{
+    font-size: 20px;
+    font-family: var(--textosCampo);
+}
+
+.agendamento select,.data 
+{
+    width: 8em;
+    height:2em;
+    text-align: center;
+    font-size: 15px;
+    border: 1px solid goldenrod;
+    box-shadow: 1px 1px 5px black;
+}
+.botaoconfirmar button 
+{
+    width: 16vh;
+}
+
+/* página de excluir conta */
+.campoexcluir
+{
+    font-size: 14px;
+}
+/* 
+página de confirmamentos  */
+.voltarconfirmacoes
+{
+    margin-top: 3em;
+}
+
+.botaoaguardando button
+{
+    width: 12em;
+}
+
+
+/* página de feedback  */
+
+#feedback
+{
+    width: 20em;
+    height: 14em;
+    font-size: 15px;
+    border: 1px solid indianred;
+}
+
+
+
+/* pagina de adicionar catálogos  */
+.botaoconfirmaralteracoes button
+{
+    width: 8em;
+    height: 3em;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Feedback</h1>
+        <br>
+    </header>
+
+    <h2>Digite seu feedback abaixo</h2>
+    <br>
+
+    <form action="" id="formulariofeed">
+        <textarea name="feedback" id="feedback" placeholder="Digite aqui o seu feedback" ></textarea>
+
+        <div class="botaoenviar">
+            <button type="submit">Finalizar</button>
+        </div>
+
+        <div class="voltar">
+            <a href="historico.html"><img src="img/voltar.png" alt="https://www.flaticon.com/free-icons/back-arrow" class="botaovoltar"></a>
+        </div>
+
+    </form>
+</body>
+
+<script>
+    document.getElementById('formulariofeed').addEventListener('submit', function(event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+            const feedback = document.getElementById('feedback').value;
+
+            if (feedback === '') {
+                 event.preventDefault();
+            } else {
+                // Redireciona para catalogo.html
+                window.location.href = 'catalogo.html';
+            }
+        });
+</script>
+</html>

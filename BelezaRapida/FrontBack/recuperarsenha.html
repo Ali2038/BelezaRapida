@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Recuperar senha</h1>
+        <br>
+
+        <form class="confirmarcodigo" id="confirmarcodigo" onsubmit="return handleSubmit(event);">
+            <div class="titulocampo">
+                <p>E-mail ou Telefone</p>
+            </div>
+            <input type="text" required class="campo" minlength="5" maxlength="65">
+            
+            <div class="botaoenviar">
+                <button type="submit" style="margin-top: -20px;" id="enviarrecuperarsenha">Enviar</button>
+            </div>
+        </form>
+        
+        <br>
+
+        <form class="esquecisenha" id="esquecisenha">
+            <div class="titulocampo">
+                <p>Código enviado</p>
+            </div>
+            <input type="text" required class="campo" minlength="5" maxlength="5">
+
+            <div class="titulocampo">
+                <p>Nova senha</p>
+            </div>
+            <input type="password" required class="campo" id="senha" minlength="6" maxlength="12">
+
+            <div class="titulocampo">
+                <p>Confirmar senha</p>
+            </div>
+            <input type="password" required class="campo" id="confirmarsenha" minlength="6" maxlength="12">
+            <span id="mensagemErro"></span>
+
+            <div class="botaoenviar">
+                <button type="submit">Ok</button>
+            </div>
+        </form>
+
+        <div class="botaovoltarLogin">
+            <button class="voltarbotao" onclick="window.location.href = 'login.html'">
+                <img src="img/voltar.png" alt="Voltar" class="botaovoltar">
+            </button>
+        </div>
+
+        <script src="js/verificarForms.js"></script>
+        <script src="js/timeRecuperarSenha"></script>
+        <script>
+            validarSenhas('esquecisenha', 'senha', 'confirmarsenha', 'mensagemErro');
+        </script>
+    </header>
+</body>
+
+</html>

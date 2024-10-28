@@ -37,9 +37,9 @@
         <div class="titulocampo" id="telefone">
             <p>Telefone</p>
         </div>
-
-
-        <input type="text" id="telefone" class="campo" placeholder="(00) 00000-0000" minlength="11" maxlength="11" required>
+        
+        <input type="text" id="celular" class="campo" placeholder="(00) 00000-0000"  required>
+        
 
         <div class="titulocampo">
             <p>CPF</p>
@@ -51,13 +51,13 @@
             <p>Senha</p>
         </div>
 
-        <input type="text" required class="campo" id="senha" minlength="6" maxlength="12">
+        <input type="password" required class="campo" id="senha" minlength="6" maxlength="12">
 
         <div class="titulocampo">
             <p>Confirmar senha</p>
         </div>
 
-        <input type="text" required class="campo" id="confirmarsenha" minlength="6" maxlength="12">
+        <input type="password" required class="campo" id="confirmarsenha" minlength="6" maxlength="12">
         <span id="mensagemErro"></span>
 
 
@@ -83,6 +83,11 @@
     </div>
 
     <script src="js/verificarForms.js"></script>
+    <script src="js/mascaraCelular.js"></script>
+
+    <script>
+        validarSenhas('cadastro', 'senha', 'confirmarsenha', 'mensagemErro');
+    </script>
 
 </body>
 

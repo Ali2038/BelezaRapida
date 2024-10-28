@@ -26,5 +26,3 @@ function validarSenhas(formId, senhaId, confirmarSenhaId, mensagemErroId) {
         }
     });
 }
-
-validarSenhas('cadastro', 'senha', 'confirmarsenha', 'mensagemErro');

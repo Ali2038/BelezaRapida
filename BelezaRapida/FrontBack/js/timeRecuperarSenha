@@ -1,0 +1,24 @@
+ let timer;
+            function startTimer() {
+                const button = document.getElementById('enviarrecuperarsenha');
+                button.disabled = true; // Desabilita o botão
+                let timeLeft = 60;
+        
+                const countdown = setInterval(() => {
+                    timeLeft--;
+                    button.textContent = `${timeLeft}s`;
+                    if (timeLeft <= 0) {
+                        clearInterval(countdown);
+                        button.disabled = false; // Reabilita o botão
+                        button.textContent = 'Enviar'; // Restaura o texto do botão
+                    }
+                }, 1000);
+            }
+        
+            function handleSubmit(event) {
+                event.preventDefault(); // Previne o envio padrão
+                startTimer();
+                // Aqui você pode adicionar a lógica para enviar o formulário, se necessário.
+                // Exemplo: fetch ou XMLHttpRequest para enviar os dados via AJAX.
+                return false; // Impede o envio padrão do formulário
+            }

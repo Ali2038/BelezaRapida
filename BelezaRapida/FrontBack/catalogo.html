@@ -263,17 +263,8 @@
         <a href="#" id="subir"><img src="img/subir.png" alt="subir"></a>
     </div>
 
-    <script>
-        let catalogos = document.querySelectorAll('.click');
-        catalogos.forEach(catalogo => {
-            catalogo.addEventListener('click', () => {
-                const servico = catalogo.getAttribute('data-servico');
-                window.location.href = `agendamento.html?servico=${encodeURIComponent(servico)}`;
-            });
-        });
-    </script>
 
-
+    <script src="js/catalogoClick.js"></script>
     <script src="js/catalogo.js" defer></script>
 </body>
 
